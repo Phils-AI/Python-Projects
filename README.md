@@ -12,3 +12,18 @@ pip freeze > requirements.txt
 
 Now you have writen all your pip requirements into this file with every needed version.
 If you want to improve - go and delete the ones one do not need to run your project.
+
+It should look like this if you want it nice and clean: 
+    .
+    ├── ...
+    ├── projects                    # parent folder
+    │   ├── project_one             # seperat folder for project one
+    │   ├── projects_two            # seperat folder for project two
+    │   └── scripts                 # folder for all the dependencies and requirements one need
+    │       └── requirements.txt    # txt file to install all requirements
+    └── ...
+
+You can install all the requirements calling:
+```python
+pip install -r requirements.txt
+```
