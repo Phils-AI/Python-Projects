@@ -22,6 +22,18 @@ It should look like this if you want it nice and clean:
     │   └── scripts                 # folder for all the dependencies and requirements one need
     │       └── requirements.txt    # txt file to install all requirements
     └── ...
+    
+var routes = (
+  <Route name="App">
+    <Route name="Admin">
+      <Route name="Users"/>
+      <Route name="Reports"/>
+    </Route>
+    <Route name="Course">
+      <Route name="Assignments"/>
+    </Route>
+  </Route>
+);
 
 You can install all the requirements calling:
 ```python
